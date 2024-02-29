@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+body  {
+    scroll-behavior: smooth;
+    background: #fcf9f8;
+}
+.container {
+    height: 100vh;
+    padding-top: 10px;
+}
+.container .line {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(159, 103, 95, 1) -75%, rgba(67, 29, 14, 1) 77%);
+    margin-top: 89px;
+    color: white;
+    transform: rotate(-1.3deg);
+    height: 70px;
+    padding-left: 9px;
+    padding-right: 26px;
+    font-size: 31px; 
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 16px;
+    width: 1368px;
+}
+.ad_container {
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+
+.container .register {
+    display: flex;
+    justify-content: center;
+}

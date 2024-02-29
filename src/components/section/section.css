@@ -1,0 +1,114 @@
+.section_contanier {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+}
+.section_contanier .right .background {
+  background: #e2dcd9;
+  height: 630px;
+  border-top-left-radius: 8%;
+  border-bottom-left-radius: 8%;
+  margin-left: -30px;
+}
+.section_contanier .right .background img {
+  width: 600px;
+}
+.section_contanier .left {
+  padding-left: 70px;
+  padding-right: 60px;
+}
+.section_contanier .left .statistics {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 11px;
+}
+.section_contanier .left .statistics .blur_line {
+  width: 1px;
+  height: 60px;
+  background: #9b9b9b;
+}
+.section_contanier .left .texts {
+  display: flex;
+  flex-direction: column;
+}
+.section_contanier .left .texts .bg-text h2 {
+  background: linear-gradient(90deg, #9f675f 0%, #431d0e 35%);
+  font-size: 90px;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+.section_contanier .left .texts .md-text {
+  color: #391709;
+  font-size: 35px;
+  margin-top: -80px;
+}
+.section_contanier .left .texts .sm-text {
+  margin-top: -45px;
+}
+.section_contanier .left .texts .sm-text p {
+  color: #634741;
+  font-size: 20px;
+  width: 635px;
+}
+.section_contanier .left .buttons {
+  display: flex;
+  gap: 20px;
+}
+.section_contanier .left .buttons button {
+  border: none;
+  display: flex;
+  gap: 6px;
+  padding: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.section_contanier .left .buttons .button_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_contanier .left .buttons .button_1 button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background: #371406;
+  width: 225px;
+  color: white;
+  border-radius: 60px;
+  border: 1px solid #634741;
+}
+.section_contanier .left .buttons .button_1 button span {
+  position: relative;
+  top: 2px;
+}
+.section_contanier .left .buttons .button_1 button:hover {
+  background: #fcf9f8;
+  color: #8a5e4d;
+}
+.section_contanier .left .buttons .button_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_contanier .left .buttons .button_2 button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: #fcf9f8;
+  border: 1px solid #634741;
+  color: #8a5e4d;
+  border-radius: 60px;
+  width: 150px;
+}
+.section_contanier .left .buttons .button_2 button span:hover {
+  text-decoration: underline;
+}
+.section_contanier .left .buttons .button_2 button:hover {
+  background: #371406;
+  color: white;
+}

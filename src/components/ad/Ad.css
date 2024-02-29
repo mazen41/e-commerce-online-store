@@ -1,0 +1,75 @@
+.second_ad {
+  display: flex;
+  background: #f5e4e0;
+  margin-top: 10%;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.second_ad .left {
+  margin-left: -50px;
+}
+.second_ad .right {
+  margin-top: 21%;
+  transform: rotate(245deg);
+}
+.second_ad .right img {
+  width: 350px;
+}
+.second_ad .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second_ad .middle .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second_ad .middle .title h2 {
+  font-size: 28px;
+  color: #391608;
+}
+.second_ad .middle .title h2 span {
+  color: #986e5c;
+}
+.second_ad .middle .title p {
+  font-size: 15px;
+  margin-top: -9px;
+  color: #391608;
+}
+.second_ad .middle .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+.second_ad .middle .buttons input {
+  background: white;
+  border: none;
+  border-radius: 9px;
+  width: 327px;
+  height: 40px;
+  padding-left: 15px;
+  outline: none;
+}
+.second_ad .middle .buttons input::placeholder {
+  color: #391608;
+}
+.second_ad .middle .buttons button {
+  border: none;
+  outline: none;
+  padding: 15px;
+  color: white;
+  background: #723e29;
+  border-radius: 30px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.6s;
+}

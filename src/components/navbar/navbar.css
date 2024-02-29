@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav_container {
+  padding-left: 70px;
+  padding-right: 60px;
+}
+.nav_container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.nav_container .nav .logo h2 {
+  font-size: 25px;
+}
+.nav_container .nav .links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+}
+.nav_container .nav .extra {
+  display: flex;
+  gap: 40px;
+}
+.nav_container .nav .extra .icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nav_container .nav .extra .icons div {
+  border: 1px solid #723e29;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav_container .nav .extra .icons div:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.nav_container .nav .extra div {
+  display: flex;
+  align-items: center;
+}
+.nav_container .nav .extra .icons .search img {
+  width: 30px;
+}
+.nav_container .nav .extra .auth button {
+  background: #723e29;
+  border: none;
+  color: white;
+  display: flex;
+  gap: 6px;
+  border-radius: 19px;
+  padding: 14px;
+  font-size: 15px;
+}
+.nav_container .nav .extra .auth button span {
+  cursor: pointer;
+}
+.nav_container .nav .extra .auth button span:hover {
+  text-decoration: underline;
+}

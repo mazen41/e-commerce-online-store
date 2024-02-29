@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12%;
+}
+.register_container .title h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+.register_container .title p {
+  font-weight: 400;
+  margin-top: -16px;
+}
+.register_container .sm-line {
+  margin-top: 0px;
+  display: flex;
+  margin-left: 13px;
+}
+.register_container .sm-line p {
+  display: flex;
+}
+.register_container .sm-line p::before {
+  display: flex;
+  content: "";
+  width: 108px;
+  height: 2px;
+  background: #e6e4e1;
+  position: relative;
+  top: 13px;
+  right: 11px;
+}
+.register_container .sm-line p::after {
+  display: flex;
+  content: "";
+  width: 122px;
+  height: 2px;
+  background: #e6e4e1;
+  position: relative;
+  top: 13px;
+  right: -12px;
+}
+.register_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.register_container form .inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register_container form .inputGroup label {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.register_container form .inputGroup input {
+  outline: none;
+  width: 338px;
+  height: 37px;
+  border-radius: 4px;
+  border: 3px solid #e6e4e1;
+  background: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.register_container form .button button {
+  width: 360px;
+  background: #723e29;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+}
+.register_container form .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register_container form .check p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.register_container form .check p span {
+  display: flex;
+  align-items: center;
+  color: #723e29;
+  font-weight: bold;
+}
