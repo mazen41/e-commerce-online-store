@@ -1,114 +1,110 @@
 .about {
   display: flex;
   margin-top: 12%;
-  gap: 11%;
+  gap: 6%;
   align-items: center;
   padding-bottom: 25%;
-}
-.about .image {
-  position: relative;
-}
-.about .image img {
-  width: 450px;
-}
-.about .image .comment {
-  position: absolute;
-  top: 40%;
-  left: 18%;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), #f5e4e0);
-  border-radius: 50px;
-  padding-left: 15px;
-}
-.about .image .comment .icon img {
-  width: 60px;
-  border-radius: 50%;
-}
-.about .image .comment .title {
-  display: flex;
-  flex-direction: column;
-}
-.about .image .comment .title h2 {
-  font-size: 17px;
-}
-.about .image .comment .title p {
-  width: 334px;
-  margin-top: -12px;
-  font-size: 12px;
-}
-.about .quilty {
-  display: flex;
-  flex-direction: column;
-}
-.about .quilty .title {
-  display: flex;
-  flex-direction: column;
-}
-.about .quilty .title h2 {
-  color: #391608;
-  font-size: 36px;
-  width: 620px;
-}
-.about .quilty .title p {
-  color: #391608;
-  font-size: 18px;
-  max-width: 610px;
-  margin-top: -12px;
-}
-.about .quilty .grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 25px;
-  margin-left: -14px;
-}
-.about .quilty .grid .box {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.about .quilty .grid .box .icon {
-  background: #eee6e3;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 115px;
-  height: 100px;
-}
-.about .quilty .grid .box .icon span {
-  color: #986e5c;
-}
-.about .quilty .grid .box .icon span svg {
-  font-size: 45px;
-}
-.about .quilty .grid .box .titles h2 {
-  font-size: 19px;
-}
-.about .quilty .grid .box .titles p {
-  margin-top: -9px;
-  font-size: 15px;
-}
-.about .quilty .button {
-  display: flex;
-  margin-top: 5%;
-}
-.about .quilty .button button {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  background: #371406;
-  width: 190px;
-  color: white;
-  border-radius: 60px;
-  border: 1px solid #634741;
-  gap: 7px;
-  padding: 10px;
-  cursor: pointer;
-}
-.about .quilty .button button span {
-  position: relative;
-  top: 2px;
-}
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 15px; }
+  .about .image {
+    position: relative; }
+    .about .image img {
+      width: 450px; }
+    .about .image .comment {
+      position: absolute;
+      top: 40%;
+      left: 18%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), #f5e4e0);
+      border-radius: 50px;
+      padding-left: 15px; }
+      .about .image .comment .icon img {
+        width: 60px;
+        border-radius: 50%; }
+      .about .image .comment .title {
+        display: flex;
+        flex-direction: column; }
+        .about .image .comment .title h2 {
+          font-size: 17px; }
+        .about .image .comment .title p {
+          max-width: 334px;
+          margin-top: -12px;
+          font-size: 12px; }
+  .about .quilty {
+    display: flex;
+    flex-direction: column; }
+    .about .quilty .title {
+      display: flex;
+      flex-direction: column; }
+      .about .quilty .title h2 {
+        color: #391608;
+        font-size: 36px;
+        max-width: 620px; }
+      .about .quilty .title p {
+        color: #391608;
+        font-size: 18px;
+        max-width: 610px;
+        margin-top: -12px; }
+    .about .quilty .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 25px;
+      margin-left: -14px; }
+      .about .quilty .grid .box {
+        display: flex;
+        align-items: center;
+        gap: 20px; }
+        .about .quilty .grid .box .icon {
+          background: #eee6e3;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 100px; }
+          .about .quilty .grid .box .icon span {
+            color: #986e5c; }
+        .about .quilty .grid .box .titles h2 {
+          font-size: 19px; }
+        .about .quilty .grid .box .titles p {
+          margin-top: -9px;
+          font-size: 15px; }
+    .about .quilty .button {
+      display: flex;
+      margin-top: 5%; }
+      .about .quilty .button button {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        background: #371406;
+        width: 190px;
+        color: white;
+        border-radius: 60px;
+        border: 1px solid #634741;
+        gap: 7px;
+        padding: 10px;
+        cursor: pointer; }
+        .about .quilty .button button span {
+          position: relative;
+          top: 2px; }
+
+@media (max-width: 1290px) {
+  .about {
+    justify-content: center; }
+    .about .quilty .grid {
+      grid-template-columns: auto; } }
+@media (max-width: 600px) {
+  .about .image .comment {
+    left: 8%; } }
+@media (max-width: 784px) {
+  .about .image img {
+    width: 350px; } }
+@media (max-width: 770px) {
+  .products .ad .left .ad_title h2 {
+    font-size: 30px; } }
+
+/*# sourceMappingURL=about.css.map */

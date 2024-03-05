@@ -16,6 +16,7 @@ const Register = () => {
   const { updateCartCount } = useCart();
   const navigate = useNavigate();
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const [errors, setErrors] = useState();
 
   const [cartData, setCartData] = useState(cart);
   const transferData = async (userId) => {
@@ -79,12 +80,15 @@ const Register = () => {
         Cookies.set("token", response.data.response.token, { expires: 365 });
         transferData(response.data.response.user.id);
         navigate("/");
-        console.log(response);
       } else {
-        console.log("Registration failed:", response.data);
+        // console.log("Registration failed:", response.data);
+        return response.data;
       }
     } catch (error) {
-      console.log(error);
+      setErrors(error.response.data.errors);
+      setTimeout(() => {
+        setErrors("");
+      }, 3000);
     }
   };
   if (token) {
@@ -124,6 +128,9 @@ const Register = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
+          {errors && errors['email'] ? (
+            <div className="error">{errors['email']}</div>
+          ) : null}
         </div>
 
         <div className="inputGroup">
@@ -137,6 +144,7 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
+
         </div>
         <div className="inputGroup">
           <label htmlFor="password_confirmation">Password Confirmation</label>
@@ -149,6 +157,9 @@ const Register = () => {
               onChange={(e) => setPasswordConfirmation(e.target.value)}
             />
           </div>
+          {errors && errors['password'] ? (
+            <div className="error">{errors['password']}</div>
+          ) : null}
         </div>
         <div className="button">
           <button>Create an account</button>

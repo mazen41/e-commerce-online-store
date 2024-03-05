@@ -12,6 +12,7 @@ import Cart from './components/cart/Cart';
 import {BrowserRouter , Route, Routes} from 'react-router-dom';
 import Register from './components/register/Register';
 import Signin from './components/signin/Signin';
+import Profile from './components/profile/Profile';
 function App() {
   return (
     <BrowserRouter>
@@ -28,12 +29,10 @@ function App() {
                 <Section />
               </div>
               <div className="line">
-                <p>ffee</p>
+                <p className='first'>ffee</p>
+                <p className='disapeld'>Coffee</p>
                 <p>Coffee</p>
-                <p>Coffee</p>
-                <p>Coffee</p>
-                <p>Coffee</p>
-                <p>Coff</p>
+                <p className='last'>Coff</p>
               </div>
               <div className="products_container">
                 <Products />
@@ -85,6 +84,16 @@ function App() {
               </div>
               <div className="register">
                 <Signin />
+              </div>
+            </>
+          }
+        />
+         <Route
+          path="/profile"
+          element={
+            <>
+              <div className="profile">
+                <Profile />
               </div>
             </>
           }

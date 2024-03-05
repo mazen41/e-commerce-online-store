@@ -6,7 +6,7 @@ body  {
 }
 .container {
     height: 100vh;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 .container .line {
     display: flex;
@@ -22,7 +22,6 @@ body  {
     align-items: center;
     font-family: 'Kalam', cursive;
     letter-spacing: 16px;
-    width: 1368px;
 }
 .ad_container {
     padding-left: 70px;
@@ -33,4 +32,18 @@ body  {
 .container .register {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 810px) {
+    .line .disapeld{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .line {
+        justify-content: center !important;
+    }
+    .line .first,.last {
+        display: none;
+    }
 }

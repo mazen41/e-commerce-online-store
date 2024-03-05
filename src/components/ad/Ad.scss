@@ -11,15 +11,18 @@
     position: relative;
 
     .left {
-        margin-left: -50px;
+        margin-left: -270px;
+
+        img {
+            width: 495px;
+        }
     }
 
     .right {
         margin-top: 21%;
-        transform: rotate(245deg);
 
         img {
-            width: 350px;
+            width: 250px;
         }
     }
 
@@ -28,6 +31,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 15px;
 
         .title {
             display: flex;
@@ -48,6 +52,7 @@
                 font-size: 15px;
                 margin-top: -9px;
                 color: #391608;
+                text-align: center;
             }
         }
 
@@ -61,7 +66,7 @@
                 background: white;
                 border: none;
                 border-radius: 9px;
-                width: 327px;
+                max-width: 327px;
                 height: 40px;
                 padding-left: 15px;
                 outline: none;
@@ -85,4 +90,22 @@
 
         }
     }
+}
+
+@media (max-width: 1150px) {
+    .ad_container {
+        padding-left: 20px;
+        padding-right: 23px;
+    }
+
+    .second_ad {
+        overflow: visible;
+        justify-content: center;
+
+        .left,
+        .right {
+            display: none;
+        }
+    }
+
 }

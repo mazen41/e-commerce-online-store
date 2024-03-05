@@ -143,11 +143,11 @@ const Cart = () => {
           <ul>
             <li className="first">Product Details</li>
             <li className="second">Quantity</li>
-            <li>Price</li>
-            <li>Total</li>
+            <li className="price">Price</li>
+            <li className="total">Total</li>
           </ul>
         </div>
-        <div className="line_ex"></div>
+        <div className="title_line"></div>
         <div className="products_container">
           {cartData ? (
             cartData.map((item, index) => {
@@ -204,38 +204,44 @@ const Cart = () => {
               );
             })
           ) : (
-            <p>Here is error</p>
+            <div className="msg">
+              <h4>You Haven't Add Anything To Cart Yet!</h4>
+            </div>
           )}
         </div>
         </div>
-        <div className="check_out">
-          <div className="title">
-            <h2>Cart Summary</h2>
+        {
+          cartData && (
+            <div className="check_out">
+            <div className="title">
+              <h2>Cart Summary</h2>
+            </div>
+            <div className="line_ey"></div>
+            <div className="information">
+              <div className="subtotal">
+                <p>Subtotla</p>
+                <p>${total}</p>
+              </div>
+              <div className="gitwrapping">
+                <p>Gift Wrapping</p>
+                <p>5$</p>
+              </div>
+              <div className="shipping">
+                <p>Shipping</p>
+                <p>Free</p>
+              </div>
+              <div className="total">
+                <p>Grand Total</p>
+                <p>${total + 5}</p>
+              </div>
+              <div className="buttons">
+                <button className="first">Keep Shopping</button>
+                <button className="second">Check out</button>
+              </div>
+            </div>
           </div>
-          <div className="line_ey"></div>
-          <div className="information">
-            <div className="subtotal">
-              <p>Subtotla</p>
-              <p>${total}</p>
-            </div>
-            <div className="gitwrapping">
-              <p>Gift Wrapping</p>
-              <p>5$</p>
-            </div>
-            <div className="shipping">
-              <p>Shipping</p>
-              <p>Free</p>
-            </div>
-            <div className="total">
-              <p>Grand Total</p>
-              <p>${total + 5}</p>
-            </div>
-            <div className="buttons">
-              <button className="first">Keep Shopping</button>
-              <button className="second">Check out</button>
-            </div>
-          </div>
-        </div>
+          )
+        }
       </div>
     </div>
   );

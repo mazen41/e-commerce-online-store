@@ -1,0 +1,231 @@
+.profile {
+  background: #f5e4e0;
+  margin-top: -16px;
+  padding-top: 16px;
+}
+.profile .nav ul {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.profile .nav ul .logo {
+  font-size: 30px;
+  color: #723e29;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.profile .nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.profile .settings {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile .settings .overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #3333;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.profile .settings .title {
+  display: flex;
+  flex-direction: column;
+}
+.profile .settings .title p {
+  margin-top: -10px;
+}
+.profile .settings .password .title p {
+  margin-top: 25px;
+}
+.profile .settings .basic,
+.profile .settings .password {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+.profile .settings .basic .error,
+.profile .settings .password .error {
+  border-radius: 8px;
+  background: #E94335;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: max-content;
+  margin-top: 14px;
+  font-weight: 400;
+}
+.profile .settings .basic .success-message,
+.profile .settings .password .success-message {
+  border-radius: 8px;
+  background: #34A853;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: max-content;
+  margin-top: 14px;
+  font-weight: 400;
+}
+.profile .settings .basic .input-group,
+.profile .settings .password .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile .settings .basic .input-group input,
+.profile .settings .password .input-group input {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  color: #723e29;
+  width: 255px;
+  outline: none;
+  font-weight: bold;
+}
+.profile .settings .basic .button button,
+.profile .settings .password .button button {
+  background: #723e29;
+  border: none;
+  color: white;
+  display: flex;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.profile .settings .basic .button button:hover,
+.profile .settings .password .button button:hover {
+  transform: scale(1.02);
+}
+.profile .settings .deleteAccount {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.profile .settings .deleteAccount .button {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.profile .settings .deleteAccount .button .close {
+  background: white;
+  border: none;
+  color: #723e29;
+  display: flex;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.profile .settings .deleteAccount .button button {
+  background: #E94335;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #ffff;
+  border-radius: 8px;
+  width: 190px;
+  cursor: pointer;
+}
+.profile .settings .deleteAccount .button .logout {
+  background: #723e29;
+  border: none;
+  color: #fff;
+  display: flex;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.profile .settings .deleteAccount .popup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  left: 37%;
+  top: 40%;
+  background: #723e29;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.6s;
+  animation: scale 0.4s ease-in-out;
+  z-index: 888;
+}
+.profile .settings .deleteAccount .popup .error {
+  border-radius: 8px;
+  background: #E94335;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: fit-content;
+  margin-top: 14px;
+  font-weight: 400;
+}
+.profile .settings .deleteAccount .popup .warning {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profile .settings .deleteAccount .popup .input-group input {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  color: #723e29;
+  width: 210px;
+  outline: none;
+  font-weight: bold;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 560px) {
+  .profile .settings .deleteAccount .popup {
+    left: 14%;
+  }
+}
+@media (max-width: 510px) {
+  .profile .settings .deleteAccount .popup {
+    left: 5%;
+  }
+}

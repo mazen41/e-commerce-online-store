@@ -30,7 +30,6 @@ const Products = () => {
     setCart(savedCart);
   }, []);
 
-  // console.log(userInformation.id);
   const handleCart = async (item, quantity = 1) => {
 
 
@@ -58,11 +57,10 @@ const Products = () => {
           navigate('/')
         }
       } catch (error) {
-        console.log(error)
+        return error;
       }
-    } 
+    }
     else {
-      console.log('none')
       const existingItem = cart.find((cartItem) => cartItem.id === item.id);
 
       let updatedCart;
@@ -104,7 +102,6 @@ const Products = () => {
     setProductType(type);
   }
 
-  console.log(productType);
   return (
     <div className="products">
       <div className="gap">
@@ -127,41 +124,7 @@ const Products = () => {
       <div className="products_boxs">
 
 
-        {/* {loading ? (
-          <div style={{ "marginLeft": "150px" }}>
-            <NetflixLoader />
-          </div>
-        ) : (
-          products.map((product) => (
-            product.category == "coffee beans" ? (
-              <div className="product" key={product.id}>
-                <div className="product_image">
-                  {product.image ? (
-                    <img
-                      src={`http://127.0.0.1:8000/images/product1.png`}
-                      alt=""
-                    />
-                  ) : null}
-                </div>
-                <div className="product_detail">
-                  <p className="name">{product.name}</p>
-                  <p className="price">${product.price}</p>
-                </div>
-                <div className="buy">
-                  <p>
-                    Add to cart{" "}
-                    <span>
-                      <ArrowForwardIcon />
-                    </span>
-                  </p>
-                  <span style={{ color: "#9b9b9b" }}>
-                    <FavoriteBorderIcon />
-                  </span>
-                </div>
-              </div>
-            ) : null
-          ))
-        )} */}
+
 
         {loading ? (
           <div style={{ "marginLeft": "150px" }}>

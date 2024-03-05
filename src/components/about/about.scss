@@ -1,10 +1,12 @@
 .about {
     display: flex;
     margin-top: 12%;
-    gap: 11%;
+    gap: 6%;
     align-items: center;
     padding-bottom: 25%;
-
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 15px;
     .image {
         position: relative;
 
@@ -39,7 +41,7 @@
                 }
 
                 p {
-                    width: 334px;
+                    max-width: 334px;
                     margin-top: -12px;
                     font-size: 12px;
                 }
@@ -58,7 +60,7 @@
             h2 {
                 color: #391608;
                 font-size: 36px;
-                width: 620px;
+                max-width: 620px;
             }
 
             p {
@@ -86,16 +88,11 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 115px;
+                    width: 100px;
                     height: 100px;
 
                     span {
                         color: #986e5c;
-
-                        svg {
-                            font-size: 45px;
-
-                        }
                     }
                 }
 
@@ -119,6 +116,7 @@
             // align-items: center;
             // justify-content: center;
             margin-top: 5%;
+
             button {
                 justify-content: center;
                 display: flex;
@@ -139,5 +137,39 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1290px) {
+    .about {
+        justify-content: center;
+
+        .quilty {
+            .grid {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        .image {
+            .comment {
+                left: 8%;
+            }
+        }
+    }
+}
+
+@media (max-width: 784px) {
+    .about .image img {
+        width: 350px;
+    }
+}
+
+@media(max-width: 770px) {
+    .products .ad .left .ad_title h2 {
+        font-size: 30px;
     }
 }

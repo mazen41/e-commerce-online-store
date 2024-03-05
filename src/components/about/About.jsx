@@ -4,7 +4,6 @@ import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import DynamicFeedOutlinedIcon from '@mui/icons-material/DynamicFeedOutlined';
 import CardGiftcardOutlinedIcon from '@mui/icons-material/CardGiftcardOutlined';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
 import './about.css'
 const About = () => {
   return (
@@ -28,7 +27,7 @@ const About = () => {
         </div>
         <div className="grid">
           <div className="box">
-            <div className="icon" style={{ "width": "100px" }}>
+            <div className="icon">
               <span><ForumOutlinedIcon /></span>
             </div>
             <div className="titles">
@@ -48,7 +47,7 @@ const About = () => {
           </div>
 
           <div className="box">
-            <div className="icon" style={{ "width": "140px" }}>
+            <div className="icon">
               <span><DynamicFeedOutlinedIcon /></span>
 
             </div>

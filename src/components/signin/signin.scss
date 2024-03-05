@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+
+    .title {
+        h2 {
+            font-weight: 400;
+            font-size: 32px;
+        }
+
+        p {
+            font-weight: 400;
+            margin-top: -16px;
+        }
+    }
+
+    .sm-line {
+        margin-top: 0px;
+        display: flex;
+        margin-left: 13px;
+
+        p {
+            display: flex;
+        }
+
+        p::before {
+            display: flex;
+            content: "";
+            width: 108px;
+            height: 2px;
+            background: #e6e4e1;
+            position: relative;
+            top: 13px;
+            right: 11px;
+
+        }
+
+        p::after {
+            display: flex;
+            content: "";
+            width: 122px;
+            height: 2px;
+            background: #e6e4e1;
+            position: relative;
+            top: 13px;
+            right: -12px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        .inputGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            label {
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+            .error {
+                border-radius: 8px;
+                background: #E94335;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                width: max-content;
+                margin-top: 14px;
+                font-weight: 400;
+            }
+            input {
+                outline: none;
+                width: 338px;
+                height: 37px;
+                border-radius: 4px;
+                border: 3px solid #e6e4e1;
+                background: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .button {
+            button {
+                width: 360px;
+                background: #723e29;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+
+        .check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    color: #723e29;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
