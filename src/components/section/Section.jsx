@@ -60,7 +60,6 @@ const Section = () => {
           <img src="../icons/depositphotos_82075190-stock-pho.png" alt="Error Finding Image In Icons" />
         </div>
       </div>
-
     </div>
   )
 }
