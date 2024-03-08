@@ -76,7 +76,7 @@ const NavBar = () => {
                     <div className="icons">
 
                         <div className="cart" onClick={handlenavigate}>
-                            <img src="./icons/icons8-cart-32.png" alt="" />
+                            <img src="./icons8-cart-32.png" alt="" />
                             <p style={{ "position": "absolute", "bottom": "12px", "right": "-8px", "color": "#723e29" }}>{cartCount}</p>
                         </div>
                     </div>

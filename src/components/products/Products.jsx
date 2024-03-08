@@ -178,7 +178,7 @@ const Products = () => {
           </div>
         </div>
         <div className="right">
-          <img src="./images/beans_bag.png" />
+          <img src="./beans_bag.png" />
         </div>
       </div>
       <div className="gap">

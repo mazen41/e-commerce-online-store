@@ -19,7 +19,7 @@ const Ad = () => {
                 </div>
             </div>
             <div className="right">
-                <img src="./images/beans.png" alt="" />
+                <img src="./beans.png" alt="" />
             </div>
         </div>
     )

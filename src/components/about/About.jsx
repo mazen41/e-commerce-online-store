@@ -9,10 +9,10 @@ const About = () => {
   return (
     <div className='about'>
       <div className="image">
-        <img src="./images/heart.png" alt="" />
+        <img src="./heart.png" alt="" />
         <div className="comment">
           <div className="icon">
-            <img src="./icons/profile.jfif" alt="" />
+            <img src="./profile.jfif" alt="" />
           </div>
           <div className="title">
             <h2>Fahd Hossny</h2>
