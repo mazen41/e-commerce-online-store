@@ -86,7 +86,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/products");
+        const response = await axios.get("http://coffee-online-store.infinityfreeapp.com/api/products");
         setProducts(response.data.products);
         console.log(response);
       } catch (error) {
@@ -137,7 +137,7 @@ const Products = () => {
                 <div className="product_image">
                   {product.image ? (
                     <img
-                      src={`http://127.0.0.1:8000/images/product1.png`}
+                      src={`http://coffee-online-store.infinityfreeapp.com/images/product1.png`}
                       alt=""
                     />
                   ) : null}
@@ -272,7 +272,7 @@ const Products = () => {
                 <div className="product_image" style={{ "marginTop": "0" }}>
                   {product.image ? (
                     <img
-                      src={`http://127.0.0.1:8000/images/${product.image}.png`}
+                      src={`http://coffee-online-store.infinityfreeapp.com/images/${product.image}.png`}
                       alt=""
                       style={{ "width": "200px" }}
                       className=""
