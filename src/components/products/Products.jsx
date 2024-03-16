@@ -86,6 +86,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        await api.get('/sanctum/csrf-cookie');
         const response = await api.get("api/products");
         setProducts(response.data.products);
         console.log(response);
