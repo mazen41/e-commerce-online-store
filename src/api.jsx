@@ -5,6 +5,8 @@ export const api = axios.create({
     headers: {
         'Content-Type': 'multipart/form-data',
     },
+    rejectUnauthorized: false // Set to false to allow insecure requests
+
 });
 
 export default api;
