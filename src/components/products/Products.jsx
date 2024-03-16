@@ -43,7 +43,7 @@ const Products = () => {
         formData.append('price', item.price);
         formData.append('offer', item.offer);
 
-        await api.get('/sanctum/csrf-cookie');
+        // await api.get('/sanctum/csrf-cookie');
 
         const response = await api.post('api/cart', formData, {
           headers: {
@@ -86,7 +86,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        await api.get('/sanctum/csrf-cookie');
+        // await api.get('/sanctum/csrf-cookie');
         const response = await api.get("api/products");
         setProducts(response.data.products);
         console.log(response);
