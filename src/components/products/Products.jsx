@@ -87,11 +87,13 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         // await api.get('/sanctum/csrf-cookie');
-        const response = await api.get("api/products");
+        // const response = await api.get("api/products");
+        const response = await axios.get('http://coffee-online-store.infinityfreeapp.com/api/products');
         setProducts(response.data.products);
         console.log(response);
       } catch (error) {
         console.error("Error fetching products:", error);
+        console.log(error);
       } finally {
         setLoading(false);
       }
