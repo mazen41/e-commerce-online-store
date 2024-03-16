@@ -136,7 +136,7 @@ const Products = () => {
                 <div className="product_image">
                   {product.image ? (
                     <img
-                      src={`http://coffee-online-store.infinityfreeapp.com/images/product1.png`}
+                      src={`https://coffee-online-store.infinityfreeapp.com/images/product1.png`}
                       alt=""
                     />
                   ) : null}
@@ -271,7 +271,7 @@ const Products = () => {
                 <div className="product_image" style={{ "marginTop": "0" }}>
                   {product.image ? (
                     <img
-                      src={`http://coffee-online-store.infinityfreeapp.com/images/${product.image}.png`}
+                      src={`https://coffee-online-store.infinityfreeapp.com/images/${product.image}.png`}
                       alt=""
                       style={{ "width": "200px" }}
                       className=""
