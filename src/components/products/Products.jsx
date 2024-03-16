@@ -47,7 +47,7 @@ const Products = () => {
 
         const response = await api.post('api/cart', formData, {
           headers: {
-            'X-CSRF-TOKEN': Cookies.get('XSRF-TOKEN'),
+            // 'X-CSRF-TOKEN': Cookies.get('XSRF-TOKEN'),
             'Content-Type': 'application/json',
           },
         });

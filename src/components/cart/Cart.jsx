@@ -155,7 +155,7 @@ const Cart = () => {
                 <div className="product">
                   <div className="image">
                     <img
-                      src={`http://coffee-online-store.infinityfreeapp.com/images/${item.image}.png`}
+                      src={`https://coffee-online-store.infinityfreeapp.com/images/${item.image}.png`}
                       alt=""
                     />
                     {/* <div className="name"> */}
