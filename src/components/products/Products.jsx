@@ -101,7 +101,6 @@ const Products = () => {
   const handlePage = (type) => {
     setProductType(type);
   }
-
   return (
     <div className="products">
       <div className="gap">
