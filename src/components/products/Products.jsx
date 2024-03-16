@@ -86,7 +86,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://coffee-online-store.infinityfreeapp.com/api/products");
+        const response = await api.get("api/products");
         setProducts(response.data.products);
         console.log(response);
       } catch (error) {
