@@ -88,7 +88,7 @@ const Products = () => {
       try {
         // await api.get('/sanctum/csrf-cookie');
         // const response = await api.get("api/products");
-        const response = await axios.get('http://coffee-online-store.infinityfreeapp.com/api/products');
+        const response = await axios.get('https://coffee-online-store.infinityfreeapp.com/api/products');
         setProducts(response.data.products);
         console.log(response);
       } catch (error) {
