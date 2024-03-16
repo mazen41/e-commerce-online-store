@@ -34,11 +34,11 @@ const NavBar = () => {
         try {
             const formData = new FormData();
             formData.append('user_id', userInformation.id);
-            await api.get("/sanctum/csrf-cookie");
+            // await api.get("/sanctum/csrf-cookie");
 
             const response = await api.post('api/user/logout', formData, {
                 headers: {
-                    "X-CSRF-TOKEN": Cookies.get("XSRF-TOKEN"),
+                    // "X-CSRF-TOKEN": Cookies.get("XSRF-TOKEN"),
                     "Content-Type": "application/json",
                 },
             });
