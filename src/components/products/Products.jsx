@@ -45,7 +45,7 @@ const Products = () => {
 
         // await api.get('/sanctum/csrf-cookie');
 
-        const response = await api.post('api/cart', formData, {
+        const response = await api.post('/cart', formData, {
           headers: {
             // 'X-CSRF-TOKEN': Cookies.get('XSRF-TOKEN'),
             'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ const Products = () => {
       try {
         // await api.get('/sanctum/csrf-cookie');
         // const response = await api.get("api/products");
-        const response = await api.get('/api/products');
+        const response = await api.get('/products');
         setProducts(response.data.products);
         console.log(response);
       } catch (error) {
