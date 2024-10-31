@@ -1,139 +1,203 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap");
+
 body {
   padding: 0;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .nav_container {
   padding-left: 70px;
-  padding-right: 60px; }
-  .nav_container .overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: #3333;
-    top: 0;
-    left: 0;
-    z-index: 99; }
-  .nav_container .side-nav.active {
-    transform: translateX(0); }
-  .nav_container .side-nav {
-    display: flex;
-    position: fixed;
-    right: 0;
-    height: 100%;
-    background: #f5e4e0;
-    color: white;
-    z-index: 9999;
-    padding-right: 0;
-    top: 0;
-    padding-top: 15px;
-    justify-content: center;
-    padding-right: 25px;
-    padding-left: 16px;
-    transform: translateX(250px);
-    transition: 0.6s; }
-    .nav_container .side-nav .close {
-      padding-top: 15px;
-      cursor: pointer; }
-      .nav_container .side-nav .close span {
-        color: #723e29; }
-    .nav_container .side-nav .links ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-size: 18px;
-      font-weight: 400;
-      align-items: flex-end; }
-      .nav_container .side-nav .links ul li {
-        cursor: pointer;
-        color: #723e29; }
-      .nav_container .side-nav .links ul .sm-line {
-        width: 100%;
-        height: 1px;
-        background: #723e29; }
-  .nav_container .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Poppins', sans-serif; }
-    .nav_container .nav .lines {
-      flex-direction: column;
-      align-items: center;
-      gap: 7px;
-      display: none;
-      cursor: pointer; }
-      .nav_container .nav .lines .nav-line {
-        background: #000;
-        width: 40px;
-        height: 1px; }
-    .nav_container .nav .logo h2 {
-      font-size: 25px; }
-    .nav_container .nav .links ul {
-      list-style-type: none;
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      font-size: 18px; }
-    .nav_container .nav .extra {
-      display: flex;
-      gap: 40px; }
-      .nav_container .nav .extra .user {
-        color: #723e29; }
-        .nav_container .nav .extra .user h2:hover {
-          text-decoration: underline #723e29; }
-      .nav_container .nav .extra .icons {
-        display: flex;
-        gap: 15px;
-        align-items: center; }
-        .nav_container .nav .extra .icons div {
-          border: 1px solid #723e29;
-          border-radius: 50%;
-          padding: 6px;
-          cursor: pointer;
-          transition: 0.5s; }
-        .nav_container .nav .extra .icons div:hover {
-          background: rgba(0, 0, 0, 0.04); }
-      .nav_container .nav .extra div {
-        display: flex;
-        align-items: center; }
-      .nav_container .nav .extra .icons .search img {
-        width: 30px; }
-      .nav_container .nav .extra .auth button {
-        background: #723e29;
-        border: none;
-        color: white;
-        display: flex;
-        gap: 6px;
-        border-radius: 19px;
-        padding: 14px;
-        font-size: 15px; }
-        .nav_container .nav .extra .auth button span {
-          cursor: pointer; }
-        .nav_container .nav .extra .auth button span:hover {
-          text-decoration: underline; }
+  padding-right: 60px;
+}
+
+.nav_container .overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #3333;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.nav_container .side-nav.active {
+  transform: translateX(0);
+}
+
+.nav_container .side-nav {
+  display: flex;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background: #f5e4e0;
+  color: white;
+  z-index: 9999;
+  padding-right: 0;
+  top: 0;
+  padding-top: 15px;
+  justify-content: center;
+  padding-right: 25px;
+  padding-left: 16px;
+  transform: translateX(250px);
+  transition: 0.6s;
+}
+
+.nav_container .side-nav .close {
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.nav_container .side-nav .close span {
+  color: #723e29;
+}
+
+.nav_container .side-nav .links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  align-items: flex-end;
+}
+
+.nav_container .side-nav .links ul li {
+  cursor: pointer;
+  color: #723e29;
+}
+
+.nav_container .side-nav .links ul .sm-line {
+  width: 100%;
+  height: 1px;
+  background: #723e29;
+}
+
+.nav_container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav_container .nav .lines {
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav_container .nav .lines .nav-line {
+  background: #000;
+  width: 40px;
+  height: 1px;
+}
+
+.nav_container .nav .logo h2 {
+  font-size: 25px;
+}
+
+.nav_container .nav .links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.nav_container .nav .extra {
+  display: flex;
+  gap: 40px;
+}
+
+.nav_container .nav .extra .user {
+  color: #723e29;
+}
+
+.nav_container .nav .extra .user h2:hover {
+  text-decoration: underline #723e29;
+}
+
+.nav_container .nav .extra .icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav_container .nav .extra .icons div {
+  border: 1px solid #723e29;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav_container .nav .extra .icons div:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.nav_container .nav .extra div {
+  display: flex;
+  align-items: center;
+}
+
+.nav_container .nav .extra .icons .search img {
+  width: 30px;
+}
+
+.nav_container .nav .extra .auth button {
+  background: #723e29;
+  border: none;
+  color: white;
+  display: flex;
+  gap: 6px;
+  border-radius: 19px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.nav_container .nav .extra .auth button span {
+  cursor: pointer;
+}
+
+.nav_container .nav .extra .auth button span:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 1145px) {
+
   .nav_container .nav .links,
   .nav_container .nav .extra {
-    display: none; }
+    display: none;
+  }
+
   .nav_container .nav .lines {
-    display: flex !important; } }
+    display: flex !important;
+  }
+}
+
 @media (max-width: 505px) {
   .nav_container {
-    padding-left: 28px; } }
+    padding-left: 28px;
+  }
+}
+
 @media (max-width: 590px) {
   .section_contanier .left .texts .bg-text h2 {
-    font-size: 60px !important; }
+    font-size: 60px !important;
+  }
 
   .section_contanier .left .texts .md-text {
     font-size: 25px !important;
     margin-top: -60px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+  }
 
   .section_contanier .left .texts .sm-text p {
-    font-size: 16px !important; } }
+    font-size: 16px !important;
+  }
+}
 
 /*# sourceMappingURL=navbar.css.map */
