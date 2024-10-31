@@ -22,6 +22,7 @@ body  {
     align-items: center;
     font-family: 'Kalam', cursive;
     letter-spacing: 16px;
+    max-width: 97.9%;
 }
 .ad_container {
     padding-left: 70px;
